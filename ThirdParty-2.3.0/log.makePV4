@@ -1,0 +1,144 @@
+
+ParaView_SOURCE_DIR=/home/mizuha/OpenFOAM/ThirdParty-2.3.0/ParaView-4.1.0
+ParaView_BINARY_DIR=/home/mizuha/OpenFOAM/ThirdParty-2.3.0/build/linux64Gcc/ParaView-4.1.0
+ParaView_DIR=/home/mizuha/OpenFOAM/ThirdParty-2.3.0/platforms/linux64Gcc/ParaView-4.1.0
+sed: /home/mizuha/OpenFOAM/ThirdParty-2.3.0/ParaView-4.1.0/VTK/Utilities/kwsys/kwsysDateStamp.cmake を読み込めません: そのようなファイルやディレクトリはありません
+date-stamp: 
+
+Build stages selected
+---------------------
+    -config   true
+    -make     true
+    -install  true
+---------------------
+Features selected
+    mesa      false
+    mpi       false
+    python    false
+    qt        true
+---------------------
+Version information
+    qt        4.8.6
+    version   4.1.0
+    major     4.1
+    build     Release
+MISMATCH!
+    specified 4.1.0
+    found     
+---------------------
+removing old build directory
+    /home/mizuha/OpenFOAM/ThirdParty-2.3.0/build/linux64Gcc/ParaView-4.1.0
+----
+Configuring paraview-4.1.0 (major version: 4.1)
+    MPI    support : false
+    Python support : false
+    MESA   support : false
+    Qt dev support : true
+    Source         : /home/mizuha/OpenFOAM/ThirdParty-2.3.0/ParaView-4.1.0
+    Build          : /home/mizuha/OpenFOAM/ThirdParty-2.3.0/build/linux64Gcc/ParaView-4.1.0
+    Target         : /home/mizuha/OpenFOAM/ThirdParty-2.3.0/platforms/linux64Gcc/ParaView-4.1.0
+    Build type     : Release
+----
+
+cmake -DCMAKE_INSTALL_PREFIX:PATH=/home/mizuha/OpenFOAM/ThirdParty-2.3.0/platforms/linux64Gcc/ParaView-4.1.0 -DBUILD_SHARED_LIBS:BOOL=ON VTK_USE_RPATH:BOOL=OFF -DPARAVIEW_INSTALL_DEVELOPMENT_FILES:BOOL=ON -DBUILD_TESTING:BOOL=OFF -DPARAVIEW_BUILD_QT_GUI=ON -DCMAKE_BUILD_TYPE:STRING=Release /home/mizuha/OpenFOAM/ThirdParty-2.3.0/ParaView-4.1.0
+
+----
+
+-- The C compiler identification is GNU 4.8.2
+-- The CXX compiler identification is GNU 4.8.2
+-- Check for working C compiler: /usr/bin/gcc
+-- Check for working C compiler: /usr/bin/gcc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/g++
+-- Check for working CXX compiler: /usr/bin/g++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Found Git: /usr/bin/git (found version "1.9.1") 
+-- Could not use git to determine source version, using version 4.1.0
+-- Looking for a Fortran compiler
+-- Looking for a Fortran compiler - NOTFOUND
+-- Looking for Q_WS_X11
+-- Looking for Q_WS_X11 - found
+-- Looking for Q_WS_WIN
+-- Looking for Q_WS_WIN - not found
+-- Looking for Q_WS_QWS
+-- Looking for Q_WS_QWS - not found
+-- Looking for Q_WS_MAC
+-- Looking for Q_WS_MAC - not found
+-- Found Qt4: /usr/bin/qmake (found suitable version "4.8.6", minimum required is "4.7.0") 
+-- Performing Test HAVE_GCC_ERROR_RETURN_TYPE
+-- Performing Test HAVE_GCC_ERROR_RETURN_TYPE - Success
+-- Performing Test HAVE_GCC_VISIBILITY
+-- Performing Test HAVE_GCC_VISIBILITY - Success
+-- Performing Test Support for 64 bit file systems
+-- Performing Test Support for 64 bit file systems - Success
+-- Performing Test VTK_CONST_REVERSE_ITERATOR_COMPARISON
+-- Performing Test VTK_CONST_REVERSE_ITERATOR_COMPARISON - Success
+-- Check if the system is big endian
+-- Searching 16 bit integer
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Using unsigned short
+-- Check if the system is big endian - little endian
+-- Looking for include file pthread.h
+-- Looking for include file pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- Looking for C++ include iostream
+-- Looking for C++ include iostream - found
+-- Check for STD namespace
+-- Check for STD namespace - found
+-- Check for ANSI scope
+-- Check for ANSI scope - found
+-- Check for sstream
+-- Check for sstream - found
+-- Check size of int
+-- Check size of int - done
+-- Check size of long
+-- Check size of long - done
+-- Check size of char
+-- Check size of char - done
+-- Check size of short
+-- Check size of short - done
+-- Check size of float
+-- Check size of float - done
+-- Check size of double
+-- Check size of double - done
+-- Check size of long long
+-- Check size of long long - done
+-- Check size of __int64
+-- Check size of __int64 - failed
+-- Check size of uintptr_t
+-- Check size of uintptr_t - done
+-- Checking signedness of char
+-- Checking signedness of char -- signed
+-- Checking support for full template specialization syntax
+-- Checking support for full template specialization syntax -- yes
+-- Checking support for C++ explicit template instantiation
+-- Checking support for C++ explicit template instantiation -- yes
+-- Checking for builtin __sync_add_and_fetch
+-- Checking for builtin __sync_add_and_fetch -- success
+-- Checking ANSI streams end-of-file bug level
+-- Checking ANSI streams end-of-file bug level - 1
+-- Checking if ostream supports long long
+-- Checking if ostream supports long long -- yes
+-- Checking if istream supports long long
+-- Checking if istream supports long long -- yes
+-- Looking for getsockname in socket
+-- Looking for getsockname in socket - not found
+-- Checking for getsockname with socklen_t
+-- Checking for getsockname with socklen_t -- yes
+-- Looking for SO_REUSEADDR
+-- Looking for SO_REUSEADDR - found

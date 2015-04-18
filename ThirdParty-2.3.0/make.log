@@ -1,0 +1,33 @@
+
+========================================
+Start ThirdParty Allwmake
+========================================
+
+========================================
+Build MPI libraries if required
+
+========================================
+Build Scotch decomposition library scotch_6.0.0
+    /home/mizuha/OpenFOAM/ThirdParty-2.3.0/platforms/linux64Gcc/scotch_6.0.0
+    scotch header in /home/mizuha/OpenFOAM/ThirdParty-2.3.0/platforms/linux64Gcc/scotch_6.0.0/include
+    scotch libs   in /home/mizuha/OpenFOAM/ThirdParty-2.3.0/platforms/linux64GccDPOpt/lib
+
+========================================
+Build PTScotch decomposition library scotch_6.0.0 (uses MPI)
+    /home/mizuha/OpenFOAM/ThirdParty-2.3.0/platforms/linux64Gcc/scotch_6.0.0
+
+    ptscotch header in /home/mizuha/OpenFOAM/ThirdParty-2.3.0/platforms/linux64Gcc/scotch_6.0.0/include/openmpi-system
+    ptscotch libs   in /home/mizuha/OpenFOAM/ThirdParty-2.3.0/platforms/linux64GccDPOpt/lib/openmpi-system
+
+========================================
+Build Metis decomposition
+    optional component Metis was not found
+========================================
+Build CGAL
+    CGAL headers in /home/mizuha/OpenFOAM/ThirdParty-2.3.0/platforms/linux64Gcc/CGAL-4.3/include
+    CGAL libs    in /home/mizuha/OpenFOAM/ThirdParty-2.3.0/platforms/linux64Gcc/CGAL-4.3/lib
+
+========================================
+Done ThirdParty Allwmake
+========================================
+
