@@ -11,33 +11,27 @@ FoamFile
     format      ascii;
     class       dictionary;
     location    "system";
-    object      topoSetDict.1;
+    object      setFieldsDict;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-actions
+defaultFieldValues
 (
-    {
-        name    semiConductor;
-        type    faceSet;
-        action  new;
-        source  boxToCell;
-        sourceInfo
-        {
-            //box (0.008 0.016 0.0005) (0.028 0.036 0.0012);
-            box (0.008 0.016 0.0013) (0.028 0.036 0.002);
-        }
-    }
-    {
-        name    semiConductor;
-        type    faceZoneSet;
-        action  new;
-        source  setToFaceZone;
-        sourceInfo
-        {
-            faceSet semiConductor;
-        }
-    }
+    volScalarFieldValue alpha.air 0
 );
+
+//regions
+//(
+//    boxToCell
+//    {
+//        box (0 0 -0.1) (0.15 0.701 0.1);
+//        fieldValues
+//        (
+//            volScalarFieldValue alpha.air 0
+//            volScalarFieldValue alpha.water 1
+//        );
+//    }
+//);
+
 
 // ************************************************************************* //
