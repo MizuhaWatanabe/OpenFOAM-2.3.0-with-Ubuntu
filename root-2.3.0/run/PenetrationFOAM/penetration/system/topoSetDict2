@@ -21,7 +21,7 @@ actions
         name    semiConductor2;
         type    faceSet;
         action  new;
-        source  boxToCell;
+        source  boxToFace;
         sourceInfo
         {
             box (0.008 0.016 0.0013) (0.028 0.036 0.002);
