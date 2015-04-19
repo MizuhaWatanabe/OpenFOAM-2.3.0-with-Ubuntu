@@ -20,18 +20,9 @@ defaultFieldValues
     volScalarFieldValue alpha.air 0
 );
 
-//regions
-//(
-//    boxToCell
-//    {
-//        box (0 0 -0.1) (0.15 0.701 0.1);
-//        fieldValues
-//        (
-//            volScalarFieldValue alpha.air 0
-//            volScalarFieldValue alpha.water 1
-//        );
-//    }
-//);
+regions
+(
+);
 
 
 // ************************************************************************* //
