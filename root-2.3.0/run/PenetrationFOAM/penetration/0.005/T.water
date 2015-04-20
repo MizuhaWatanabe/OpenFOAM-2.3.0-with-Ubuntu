@@ -10,8 +10,8 @@ FoamFile
     version     2.0;
     format      ascii;
     class       volScalarField;
-    location    "0";
-    object      T.air;
+    location    "0.005";
+    object      T.water;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
@@ -29,21 +29,21 @@ boundaryField
     xsides
     {
         type            inletOutlet;
-        phi             phi.air;
+        phi             phi.water;
         inletValue      uniform 300;
         value           uniform 300;
     }
     zsides
     {
         type            inletOutlet;
-        phi             phi.air;
+        phi             phi.water;
         inletValue      uniform 300;
         value           uniform 300;
     }
     outlet
     {
         type            inletOutlet;
-        phi             phi.air;
+        phi             phi.water;
         inletValue      uniform 300;
         value           uniform 300;
     }
@@ -52,14 +52,6 @@ boundaryField
         type            zeroGradient;
     }
     semiConductor1-shadow
-    {
-        type            zeroGradient;
-    }
-    semiConductor2
-    {
-        type            zeroGradient;
-    }
-    semiConductor2-shadow2
     {
         type            zeroGradient;
     }

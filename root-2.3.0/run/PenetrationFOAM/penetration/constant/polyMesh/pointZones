@@ -9,51 +9,13 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       volScalarField;
-    location    "0";
-    object      alpha.air;
+    class       regIOobject;
+    location    "constant/polyMesh";
+    object      pointZones;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 0 0 0 0 0 0];
-
-internalField   uniform 0.5;
-
-boundaryField
-{
-    aeration
-    {
-        type            zeroGradient;
-    }
-    xsides
-    {
-        type            zeroGradient;
-    }
-    zsides
-    {
-        type            zeroGradient;
-    }
-    outlet
-    {
-        type            zeroGradient;
-    }
-    semiConductor1
-    {
-        type            zeroGradient;
-    }
-    semiConductor1-shadow
-    {
-        type            zeroGradient;
-    }
-    semiConductor2
-    {
-        type            zeroGradient;
-    }
-    semiConductor2-shadow2
-    {
-        type            zeroGradient;
-    }
-}
-
+0
+()
 
 // ************************************************************************* //

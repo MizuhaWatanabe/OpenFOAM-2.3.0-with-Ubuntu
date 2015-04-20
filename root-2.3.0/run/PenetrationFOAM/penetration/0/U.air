@@ -44,18 +44,24 @@ boundaryField
         phi             phi.air;
         value           uniform (0 0 0);
     }
-    defaultFaces
+    semiConductor1
     {
-        type            empty;
-    }
-    semiConductor
-    {
-        type            calculated;
+        type            fixedValue;
         value           uniform (0 0 0);
     }
-    semiConductor-shadow
+    semiConductor1-shadow
     {
-        type            calculated;
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    semiConductor2
+    {
+        type            fixedValue;
+        value           uniform (0 0 0);
+    }
+    semiConductor2-shadow2
+    {
+        type            fixedValue;
         value           uniform (0 0 0);
     }
 }

@@ -15,31 +15,83 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-4
+8
 (
     aeration
     {
         type            patch;
         nFaces          225;
-        startFace       5544;
+        startFace       4430;
     }
     xsides
     {
         type            patch;
         nFaces          450;
-        startFace       5769;
+        startFace       4655;
     }
     zsides
     {
         type            patch;
         nFaces          162;
-        startFace       6219;
+        startFace       5105;
     }
     outlet
     {
         type            patch;
         nFaces          225;
-        startFace       6381;
+        startFace       5267;
+    }
+    semiConductor1
+    {
+        type            wall;
+        inGroups        
+2
+(
+wall
+baffleFaces
+)
+;
+        nFaces          549;
+        startFace       5492;
+    }
+    semiConductor1-shadow
+    {
+        type            wall;
+        inGroups        
+2
+(
+wall
+baffleFaces
+)
+;
+        nFaces          549;
+        startFace       6041;
+    }
+    semiConductor2
+    {
+        type            wall;
+        inGroups        
+2
+(
+wall
+baffleFaces
+)
+;
+        nFaces          565;
+        startFace       6590;
+    }
+    semiConductor2-shadow2
+    {
+        type            wall;
+        inGroups        
+2
+(
+wall
+baffleFaces
+)
+;
+        nFaces          565;
+        startFace       7155;
     }
 )
 

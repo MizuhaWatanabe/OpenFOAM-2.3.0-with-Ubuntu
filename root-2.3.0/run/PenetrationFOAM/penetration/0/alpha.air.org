@@ -37,16 +37,22 @@ boundaryField
     {
         type            zeroGradient;
     }
-    defaultFaces
-    {
-        type            empty;
-    }
-    semiConductor
+    semiConductor1
     {
         type            calculated;
         value           uniform 0;
     }
-    semiConductor-shadow
+    semiConductor1-shadow
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    semiConductor2
+    {
+        type            calculated;
+        value           uniform 0;
+    }
+    semiConductor2-shadow2
     {
         type            calculated;
         value           uniform 0;

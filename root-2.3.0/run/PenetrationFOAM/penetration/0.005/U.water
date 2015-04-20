@@ -9,59 +9,47 @@ FoamFile
 {
     version     2.0;
     format      ascii;
-    class       volScalarField;
-    location    "0";
-    object      T.air;
+    class       volVectorField;
+    location    "0.005";
+    object      U.water;
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-dimensions      [0 0 0 1 0 0 0];
+dimensions      [0 1 -1 0 0 0 0];
 
-internalField   uniform 300;
+internalField   uniform (0 0 0);
 
 boundaryField
 {
     aeration
     {
         type            fixedValue;
-        value           uniform 300;
+        value           uniform (0 0.01 0);
     }
     xsides
     {
-        type            inletOutlet;
-        phi             phi.air;
-        inletValue      uniform 300;
-        value           uniform 300;
+        type            pressureInletOutletVelocity;
+        value           uniform (0 0 0);
     }
     zsides
     {
-        type            inletOutlet;
-        phi             phi.air;
-        inletValue      uniform 300;
-        value           uniform 300;
+        type            pressureInletOutletVelocity;
+        value           uniform (0 0 0);
     }
     outlet
     {
-        type            inletOutlet;
-        phi             phi.air;
-        inletValue      uniform 300;
-        value           uniform 300;
+        type            pressureInletOutletVelocity;
+        value           uniform (0 0 0);
     }
     semiConductor1
     {
-        type            zeroGradient;
+        type            fixedValue;
+        value           uniform (0 0 0);
     }
     semiConductor1-shadow
     {
-        type            zeroGradient;
-    }
-    semiConductor2
-    {
-        type            zeroGradient;
-    }
-    semiConductor2-shadow2
-    {
-        type            zeroGradient;
+        type            fixedValue;
+        value           uniform (0 0 0);
     }
 }
 

@@ -34,6 +34,59 @@ baffles
                 patchFields
                 {
                   T.air
+                  {
+                    type            zeroGradient;
+                  }
+                  T.water
+                  {
+                    type            zeroGradient;
+                  }
+                  Theta
+                  {
+                    type            zeroGradient;
+                  }
+                  U.air
+                  {
+                    type            fixedValue;
+                    value           uniform (0 0 0);
+                  }
+                  U.water
+                  {
+                    type            fixedValue;
+                    value           uniform (0 0 0);
+                  }
+                  alpha.air
+                  {
+                    type            zeroGradient;
+                  }
+                  epsilon.air
+                  {
+                    type            zeroGradient;
+                  }
+                  epsilon.water
+                  {
+                    type            zeroGradient;
+                  }
+                  k.air
+                  {
+                    type            zeroGradient;
+                  }
+                  k.water
+                  {
+                    type            zeroGradient;
+                  }
+                  nut.air
+                  {
+                    type            zeroGradient;
+                  }
+                  nut.water
+                  {
+                    type            zeroGradient;
+                  }
+                  p
+                  {
+                    type            zeroGradient;
+                  }
                 }
             }
             slave
