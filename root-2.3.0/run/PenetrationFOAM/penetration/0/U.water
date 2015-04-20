@@ -24,7 +24,7 @@ boundaryField
     aeration
     {
         type            fixedValue;
-        value           uniform (0 0.01 0);
+        value           $internalField;
     }
     xsides
     {

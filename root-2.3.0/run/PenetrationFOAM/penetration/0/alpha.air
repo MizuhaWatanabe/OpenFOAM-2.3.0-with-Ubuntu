@@ -23,7 +23,8 @@ boundaryField
 {
     aeration
     {
-        type            zeroGradient;
+        type            fixedValue;
+        value           uniform 1;
     }
     xsides
     {
