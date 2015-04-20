@@ -15,38 +15,31 @@ FoamFile
 }
 // * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * //
 
-5
+4
 (
     aeration
     {
         type            patch;
         nFaces          225;
-        startFace       4969;
+        startFace       5544;
     }
     xsides
     {
         type            patch;
         nFaces          450;
-        startFace       5194;
+        startFace       5769;
     }
     zsides
     {
         type            patch;
         nFaces          162;
-        startFace       5644;
+        startFace       6219;
     }
     outlet
     {
         type            patch;
-        nFaces          155;
-        startFace       5806;
-    }
-    defaultFaces
-    {
-        type            empty;
-        inGroups        1(empty);
-        nFaces          1220;
-        startFace       5961;
+        nFaces          225;
+        startFace       6381;
     }
 )
 
