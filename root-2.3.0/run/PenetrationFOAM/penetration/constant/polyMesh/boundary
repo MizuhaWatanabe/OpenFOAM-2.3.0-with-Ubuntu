@@ -20,26 +20,26 @@ FoamFile
     aeration
     {
         type            patch;
-        nFaces          500;
-        startFace       23061;
+        nFaces          672;
+        startFace       37284;
     }
     xsides
     {
         type            patch;
-        nFaces          1000;
-        startFace       23561;
+        nFaces          1344;
+        startFace       37956;
     }
     zsides
     {
         type            patch;
-        nFaces          800;
-        startFace       24561;
+        nFaces          1568;
+        startFace       39300;
     }
     outlet
     {
         type            patch;
-        nFaces          500;
-        startFace       25361;
+        nFaces          672;
+        startFace       40868;
     }
     semiConductor1
     {
@@ -51,8 +51,8 @@ wall
 baffleFaces
 )
 ;
-        nFaces          2762;
-        startFace       25861;
+        nFaces          8540;
+        startFace       41540;
     }
     semiConductor1-shadow
     {
@@ -64,8 +64,8 @@ wall
 baffleFaces
 )
 ;
-        nFaces          2762;
-        startFace       28623;
+        nFaces          8540;
+        startFace       50080;
     }
     semiConductor2
     {
@@ -77,8 +77,8 @@ wall
 baffleFaces
 )
 ;
-        nFaces          2777;
-        startFace       31385;
+        nFaces          8496;
+        startFace       58620;
     }
     semiConductor2-shadow2
     {
@@ -90,8 +90,8 @@ wall
 baffleFaces
 )
 ;
-        nFaces          2777;
-        startFace       34162;
+        nFaces          8496;
+        startFace       67116;
     }
 )
 
