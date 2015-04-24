@@ -36,7 +36,10 @@ boundaryField
     }
     outlet
     {
-        type            zeroGradient;
+        type            inletOutlet;
+        phi             phi.air;
+        inletValue      uniform 0;
+        value           uniform 0;
     }
     semiConductor1
     {

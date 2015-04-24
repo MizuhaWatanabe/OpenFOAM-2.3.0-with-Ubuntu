@@ -17,29 +17,29 @@ FoamFile
 
 dimensions      [0 2 -1 0 0 0 0];
 
-internalField   uniform 0;
+internalField   uniform 1e-08;
 
 boundaryField
 {
     aeration
     {
         type            calculated;
-        value           uniform 0;
+        value           uniform 1e-08;
     }
     xsides
     {
-        type            calculated;
-        value           uniform 0;
+        type            nutkWallFunction;
+        value           uniform 1e-08;
     }
     zsides
     {
-        type            calculated;
-        value           uniform 0;
+        type            nutkWallFunction;
+        value           uniform 1e-08;
     }
     outlet
     {
         type            calculated;
-        value           uniform 0;
+        value           uniform 1e-08;
     }
     semiConductor1
     {

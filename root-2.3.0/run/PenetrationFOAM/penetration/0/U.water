@@ -28,12 +28,12 @@ boundaryField
     }
     xsides
     {
-        type            pressureInletOutletVelocity;
+        type            fixedValue;
         value           uniform (0 0 0);
     }
     zsides
     {
-        type            pressureInletOutletVelocity;
+        type            fixedValue;
         value           uniform (0 0 0);
     }
     outlet

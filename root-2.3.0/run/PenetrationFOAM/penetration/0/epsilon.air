@@ -28,16 +28,12 @@ boundaryField
     }
     xsides
     {
-        type            inletOutlet;
-        phi             phi.air;
-        inletValue      uniform 0.00015;
+        type            epsilonWallFunction;
         value           uniform 0.00015;
     }
     zsides
     {
-        type            inletOutlet;
-        phi             phi.air;
-        inletValue      uniform 0.00015;
+        type            epsilonWallFunction;
         value           uniform 0.00015;
     }
     outlet

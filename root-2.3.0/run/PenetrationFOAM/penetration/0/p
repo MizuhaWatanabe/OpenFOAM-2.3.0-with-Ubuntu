@@ -29,12 +29,14 @@ boundaryField
     }
     xsides
     {
-        type            fixedValue;
+        type            fixedFluxPressure;
+        gradient        uniform 0;
         value           uniform 100000;
     }
     zsides
     {
-        type            fixedValue;
+        type            fixedFluxPressure;
+        gradient        uniform 0;
         value           uniform 100000;
     }
     outlet

@@ -21,25 +21,28 @@ FoamFile
     {
         type            patch;
         nFaces          672;
-        startFace       37284;
+        startFace       49938;
     }
     xsides
     {
-        type            patch;
+        type            wall;
+        inGroups        1(wall);
         nFaces          1344;
-        startFace       37956;
+        startFace       50610;
     }
     zsides
     {
-        type            patch;
+        type            wall;
+        inGroups        1(wall);
         nFaces          1568;
-        startFace       39300;
+        startFace       51954;
     }
     outlet
     {
-        type            patch;
+        type            wall;
+        inGroups        1(wall);
         nFaces          672;
-        startFace       40868;
+        startFace       53522;
     }
     semiConductor1
     {
@@ -51,8 +54,8 @@ wall
 baffleFaces
 )
 ;
-        nFaces          8540;
-        startFace       41540;
+        nFaces          2199;
+        startFace       54194;
     }
     semiConductor1-shadow
     {
@@ -64,8 +67,8 @@ wall
 baffleFaces
 )
 ;
-        nFaces          8540;
-        startFace       50080;
+        nFaces          2199;
+        startFace       56393;
     }
     semiConductor2
     {
@@ -77,8 +80,8 @@ wall
 baffleFaces
 )
 ;
-        nFaces          8496;
-        startFace       58620;
+        nFaces          2183;
+        startFace       58592;
     }
     semiConductor2-shadow2
     {
@@ -90,8 +93,8 @@ wall
 baffleFaces
 )
 ;
-        nFaces          8496;
-        startFace       67116;
+        nFaces          2183;
+        startFace       60775;
     }
 )
 
